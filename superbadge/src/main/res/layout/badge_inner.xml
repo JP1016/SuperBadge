@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_bottom"
+    android:layout_width="230dp"
+    android:layout_height="60dp"
+    android:elevation="2dp"
+    android:layout_margin="4dp"
+    card_view:cardCornerRadius="30dp"
+    card_view:cardElevation="3dp"
+    card_view:cardMaxElevation="6dp"
+    card_view:contentPadding="2dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/badge_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logosmall" />
+
+        <TextView
+            android:id="@+id/primaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/badge_image"
+            android:text="Netflix"
+            android:textColor="#000"
+            android:paddingLeft="3dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/secondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/primaryText"
+            android:layout_toRightOf="@+id/badge_image"
+            android:paddingLeft="3dp"
+            android:text="Streaming/Video"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tertiaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:text="8.5"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+</RelativeLayout>

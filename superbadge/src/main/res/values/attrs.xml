@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SuperBadge">
+        <attr name="sb_primaryText" format="string"/>
+        <attr name="sb_secondaryText" format="string"/>
+        <attr name="sb_tertiaryText" format="string"/>
+        <attr name="sb_image" format="string"/>
+
+        <attr name="sb_primaryTextColor" format="color"/>
+        <attr name="sb_secondaryTextColor" format="color"/>
+        <attr name="sb_tertiaryTextColor" format="color"/>
+
+    </declare-styleable>
+
+</resources>
