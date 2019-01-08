@@ -17,7 +17,7 @@ Android Library to display ratings and other information in a beautiful badge!!
 # Gradle
 ```
 **Step 1. ** Add the JitPack repository to your build file
-
+```
 allprojects {
 		repositories {
 			...
