@@ -2,7 +2,7 @@
 SuperBadge Android Library 
 Android Library to display ratings and other information in a beautiful badge!!
 [![](https://jitpack.io/v/JP1016/SuperBadge.svg)](https://jitpack.io/#JP1016/SuperBadge)
-![enter image description here](https://i.imgur.com/IvGIhbB.jpg)
+![enter image description here](https://i.imgur.com/IvGIhbB.jpg =300x400)
 
 
 
@@ -61,6 +61,9 @@ dependencies {
 ```
         //Init
         SuperBadge sb=findViewById(R.id.badge);
+	sb.setImage("https://4.bp.blogspot.com/-Nyfdpymc_Lo/VkQw-nJ79mI/AAAAAAAARYg/6o9VeoTvu-I/s1600-r/logo_chrome.png");
+        sb.setPrimaryText("Google Chrome");
+        sb.setSecondaryText("Web Browser");
 
         //Callback
         sb.setOnBageClickListener(new SuperBadge.OnBadgeClickListener() {
