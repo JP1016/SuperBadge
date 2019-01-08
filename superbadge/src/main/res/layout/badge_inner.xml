@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/primaryText"
             android:layout_toRightOf="@+id/badge_image"
-            android:paddingLeft="3dp"
+            android:paddingLeft="4dp"
             android:text="Streaming/Video"
             android:textSize="15sp" />
 

@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-public class SuperBadge extends RelativeLayout{
+public class SuperBadge extends RelativeLayout {
 
     private Context mContext;
     private OnBadgeClickListener mListener;
@@ -20,6 +20,7 @@ public class SuperBadge extends RelativeLayout{
     private TextView mTertiaryText;
     private ImageView badgeImage;
     private RelativeLayout rootLayout;
+    private String image;
 
     public SuperBadge(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -32,11 +33,11 @@ public class SuperBadge extends RelativeLayout{
         String primary = a.getString(R.styleable.SuperBadge_sb_primaryText);
         String secondary = a.getString(R.styleable.SuperBadge_sb_secondaryText);
         String tertiary = a.getString(R.styleable.SuperBadge_sb_tertiaryText);
-        String image = a.getString(R.styleable.SuperBadge_sb_image);
+        image = a.getString(R.styleable.SuperBadge_sb_image);
 
-        int primaryColor=a.getColor(R.styleable.SuperBadge_sb_primaryTextColor,getResources().getColor(R.color.def));
-        int secondaryColor=a.getColor(R.styleable.SuperBadge_sb_secondaryTextColor,getResources().getColor(R.color.def));
-        int tertiaryColor=a.getColor(R.styleable.SuperBadge_sb_tertiaryTextColor,getResources().getColor(R.color.def));
+        int primaryColor = a.getColor(R.styleable.SuperBadge_sb_primaryTextColor, getResources().getColor(R.color.def));
+        int secondaryColor = a.getColor(R.styleable.SuperBadge_sb_secondaryTextColor, getResources().getColor(R.color.def));
+        int tertiaryColor = a.getColor(R.styleable.SuperBadge_sb_tertiaryTextColor, getResources().getColor(R.color.def));
 
         a.recycle();
 
@@ -56,21 +57,42 @@ public class SuperBadge extends RelativeLayout{
         mSecondaryText.setTextColor(secondaryColor);
         mTertiaryText.setTextColor(tertiaryColor);
 
-        Picasso.get().load(image).into(badgeImage);
+        loadImage(image);
 
         rootLayout.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                try{
-                mListener.onBadgeClick();
-            }
-            catch (Exception ex){}
+                try {
+                    mListener.onBadgeClick();
+                } catch (Exception ex) {
+                }
             }
         });
 
-
     }
 
+    public void loadImage(String imageUrl) {
+        try {
+            Picasso.get().load(imageUrl).into(badgeImage);
+        } catch (Exception ex) {
+        }
+    }
+
+    public void setImage(String imageUrl) {
+        loadImage(imageUrl);
+    }
+
+    public void setPrimaryText(String primaryText) {
+        this.mPrimaryText.setText(primaryText);
+    }
+
+    public void setSecondaryText(String secondaryText) {
+        this.mSecondaryText.setText(secondaryText);
+    }
+
+    public void setTertiaryText(String tertiaryText) {
+        this.mTertiaryText.setText(tertiaryText);
+    }
 
     public void setOnBageClickListener(OnBadgeClickListener listener) {
         mListener = listener;

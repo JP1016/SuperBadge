@@ -15,6 +15,6 @@
     app:sb_image="https://media.netflix.com/dist/img/meta-image-netflix-symbol-black.png"
     app:sb_tertiaryText="9.5"
     app:sb_tertiaryTextColor="#FF292A"
-    ></com.devzstudio.superbadge.SuperBadge>
+    />
 
 </android.support.constraint.ConstraintLayout>
