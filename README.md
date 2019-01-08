@@ -1,14 +1,23 @@
 # SuperBadge
 SuperBadge Android Library 
 Android Library to display ratings and other information in a beautiful badge!!
+
+
 [![](https://jitpack.io/v/JP1016/SuperBadge.svg)](https://jitpack.io/#JP1016/SuperBadge)
-<img src="https://i.imgur.com/IvGIhbB.jpg" width=300 height=400/>
 
 
-
-# Gradle
-**Step 1.** Add the JitPack repository to your build file
 ```
+# Examples
+```
+<img src="https://i.imgur.com/QsXrEVn.png" width=649 height=192/>
+<img src="https://i.imgur.com/wBwRQXb.jpg" width=649 height=192/>
+
+
+```
+# Gradle
+```
+**Step 1. ** Add the JitPack repository to your build file
+
 allprojects {
 		repositories {
 			...
