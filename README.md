@@ -2,7 +2,7 @@
 SuperBadge Android Library 
 Android Library to display ratings and other information in a beautiful badge!!
 [![](https://jitpack.io/v/JP1016/SuperBadge.svg)](https://jitpack.io/#JP1016/SuperBadge)
-![enter image description here](https://i.imgur.com/IvGIhbB.jpg =300x400)
+<img src="https://i.imgur.com/IvGIhbB.jpg" width=300 height=400/>
 
 
 
