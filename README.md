@@ -5,7 +5,7 @@ Android Library to display ratings and other information in a beautiful badge!!
 
 [![](https://jitpack.io/v/JP1016/SuperBadge.svg)](https://jitpack.io/#JP1016/SuperBadge)
 
-
+image:https://img.shields.io/badge/Android%20Arsenal-Super%20Badge-green.svg?style=flat["Android Arsenal", link="https://android-arsenal.com/details/1/7443"]
 ```
 # Examples
 ```
