@@ -1,5 +1,5 @@
 # SuperBadge
-SuperBadge Android Library 
+SuperBadge Android Library :
 Android Library to display ratings and other information in a beautiful badge!!
 
 
